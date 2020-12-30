@@ -32,8 +32,17 @@ if ( !$helpers.IsDirectory($SCOOP_DIR + '/apps/aria2'))
     scoop config aria2-min-split-size 10M
 }
 
+# required for unpacking InnoSetup files
+$helpers.ScoopInstall("innounp")
 
+# required for unpacking installers created with the WiX Toolset
+$helpers.ScoopInstall("dark")
+
+
+#
 # add other buckets ie repos
+#
+
 # main - Default bucket for the most common (mostly CLI) apps
 
 
@@ -54,7 +63,8 @@ $helpers.ScoopAddBucket("nerd-fonts")
 
 # nirsoft utilities
 # https://github.com/Ash258/Scoop-NirSoft
-$helpers.ScoopAddBucket("nirsoft")
+# $helpers.ScoopAddBucket("nirsoft") # known, but limited listing
+$helpers.ScoopAddBucket("nirsoft", "https://github.com/Ash258/Scoop-NirSoft.git")
 
 
 # Sysinternals utilities
@@ -92,6 +102,10 @@ $helpers.ScoopAddBucket("nonportable")
 
 # 'popular' bucket with wide variety of applications of all kind
 $helpers.ScoopAddBucket("Ash258", "https://github.com/Ash258/Scoop-Ash258.git")
+
+
+# A gui client for scoop
+$helpers.ScoopAddBucket("scoop-viewer-bucket", "https://github.com/prezesp/scoop-viewer-bucket.git")
 
 
 $helpers.Echo("scoop buckets added")
