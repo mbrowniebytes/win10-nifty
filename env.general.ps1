@@ -1,6 +1,5 @@
 
 $USERID = [Security.Principal.WindowsIdentity]::GetCurrent().User.Value
-$USER = $env:UserName
 $PSVER = $host.version
 
 $helpers.Debug = $true
@@ -16,3 +15,6 @@ if (!$helpers.RunningAsAdmin()) {
     Write-Host "Fatal: Required to run PowerShell as Admin "
     exit 2
 }
+
+# PowerShell must be enabled for your user account e.g.
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

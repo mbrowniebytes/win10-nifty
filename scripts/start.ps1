@@ -1,6 +1,8 @@
 $ErrorActionPreference = "Stop"
 clear
 
+$USER = $env:UserName
+
 # pad for progress bar
 Write-Host ""
 Write-Host ""

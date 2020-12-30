@@ -1,4 +1,6 @@
 
+# main script
+# run as admin
 
 . ./scripts/start.ps1
 
