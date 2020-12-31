@@ -80,8 +80,9 @@ $helpers.ScoopAddBucket("Sysinternals", "https://github.com/Ash258/Scoop-Sysinte
 
 # jetbrains - Installers for all JetBrains utilities and IDEs
 # only if use their ide https://www.jetbrains.com/idea/
+# recommendation: rely on ide updates
 # https://github.com/Ash258/Scoop-JetBrains
-$helpers.ScoopAddBucket("jetbrains")
+# $helpers.ScoopAddBucket("jetbrains")
 
 
 # nonportable - Non-portable apps (may require UAC)

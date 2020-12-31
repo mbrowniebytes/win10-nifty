@@ -7,10 +7,11 @@ $helpers.Echo("scoop installing dev apps..")
 $helpers.ScoopInstall("git")
 
 # https://www.jetbrains.com/idea/
-$helpers.ScoopInstall("IntelliJ-IDEA-Ultimate-portable")
+# recommendation: rely on ide updates
+# $helpers.ScoopInstall("IntelliJ-IDEA-Ultimate-portable")
 
 # https://www.virtualbox.org/
-$helpers.ScoopInstall("virtualbox-np")
+# $helpers.ScoopInstall("virtualbox-np")
 
 # https://dbeaver.io/
 $helpers.ScoopInstall("dbeaver")
