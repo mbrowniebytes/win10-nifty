@@ -21,6 +21,10 @@ usage
 Run as Administrator  
 -or-   
 Run with Powershell  
+
+Note: if you get an error you might need to change the execution policy (i.e. enable Powershell) with  
+`> Set-ExecutionPolicy RemoteSigned -scope CurrentUser`
+
   
 scripts
 =========
