@@ -1,5 +1,5 @@
 # win10-nifty
-Nifty way to install Windows 10 using [scoop](https://scoop-docs.now.sh/)
+Nifty way to install apps in Windows 10 using [scoop](https://scoop-docs.now.sh/)
 
 [scoop](https://scoop-docs.now.sh/) is a command-line installer for Windows, which allows you to script an install, update, modification, etc of your Windows 10
 
